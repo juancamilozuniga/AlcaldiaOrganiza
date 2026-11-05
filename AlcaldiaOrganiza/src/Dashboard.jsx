@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 
 function Dashboard() {
@@ -170,6 +169,72 @@ function Dashboard() {
                     />
 
                 </aside>
+
+                {/* ✅ AÑADIDO: sección derecha, solo clases de Bootstrap */}
+                <main className="col px-5 py-5 overflow-hidden">
+
+                    {/* ✅ AÑADIDO: título y botón azul */}
+                    <div className="d-flex justify-content-between align-items-center mb-4">
+                        <h1 className="display-5 fw-bold m-0">
+                            Biblioteca
+                        </h1>
+
+                        <button className="btn btn-primary fw-semibold px-3">
+                            Nueva página
+                        </button>
+                    </div>
+
+                    {/* ✅ AÑADIDO: pestañas (izquierda) e iconos de acción (derecha) */}
+                    <div className="d-flex justify-content-between align-items-center">
+
+                        <div className="d-flex align-items-center gap-1">
+                            <button className="btn btn-light rounded-pill fw-semibold px-3">
+                                <i className="bi bi-clock-history me-2"></i>
+                                Recientes
+                            </button>
+
+                            <button className="btn btn-link text-secondary text-decoration-none fw-semibold">
+                                <i className="bi bi-star me-2"></i>
+                                Favoritas
+                            </button>
+
+                            <button className="btn btn-link text-secondary text-decoration-none fw-semibold">
+                                <i className="bi bi-people me-2"></i>
+                                Compartidas
+                            </button>
+
+                            <button className="btn btn-link text-secondary text-decoration-none fw-semibold">
+                                <i className="bi bi-lock me-2"></i>
+                                Privado
+                            </button>
+
+                            <button className="btn btn-link text-secondary text-decoration-none fw-semibold">
+                                <i className="bi bi-mic me-2"></i>
+                                Anotador con IA
+                            </button>
+
+                            <button className="btn btn-link text-secondary text-decoration-none">
+                                1 más
+                            </button>
+                        </div>
+
+                        <div className="d-flex gap-1">
+                            <button className="btn btn-light bg-transparent border-0 text-secondary">
+                                <i className="bi bi-filter-left"></i>
+                            </button>
+
+                            <button className="btn btn-light bg-transparent border-0 text-secondary">
+                                <i className="bi bi-search"></i>
+                            </button>
+
+                            <button className="btn btn-light bg-transparent border-0 text-secondary">
+                                <i className="bi bi-sliders"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </main>
 
             </div>
         </div>
